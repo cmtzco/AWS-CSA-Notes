@@ -305,7 +305,8 @@
 	- Policies 
 		- A document that defines one or more permissions
 
-# Identity Access Management 101 - Lab
+
+### Identity Access Management 101 - Lab
 - Console > Services > Security, Identity, & Compliance > IAM
 - Notice IAM doesn't have a region
 	- IAM is a global service 
@@ -336,15 +337,68 @@
 				- Group Name
 				- Policies
 					- EX. (DB Access, S3 ACCESS, EC2 Read Only)
+                    - Written in JSON format
 		- Copy permissions from existing user
 		- Attach existing policies directly
 	- User Table
-		- Access Key 
-		- Secret Access Key 
+		- Access Key (Only Used for Programmatic Access) 
+		- Secret Access Key (Only Used for Programmatic Access)
 		- Password
 	- To login to the console the username and password would be used
 	- To login programmatically you would use the access key and secret access key
-    - 
+    - Create Group
+    - Group Name
+    - Attach Policies
+- Edit User 
+    - Permissions
+        - List of permissions that are associated with this user by individual assignment or by group
+    - Groups
+        - Groups this user belongs to
+    - Security Credentials
+        - Access keys for this user are here
+        - SSH Keys
+        - Console login link
+        - Last login details
+        - Console password
+        - MFA Status
+        - Signing Certificates
+    - Access Advisor
+- Apply an IAM Password Policy
+    - Password length 
+    - Require certain requirements for a password
+- Create Role
+    - Role Name
+    - Role Types
+        - AWS Service Roles
+        - Cross-Account Access
+        - Identity-Account Access
+- Click on Group
+    - Edit users in Group
+    - Edit permissions in group
+
+### Create a Billing Alarm - Lab
+- Used to alert you when you are spending over the amount you planned
+- Name (Top Right) > Alerts & Notifications > Enable Now (In Monitor you estimated charges box) > Receive Billing Alerts (Cannot be disabled)
+- Manage Billing Alerts > Cloudwatch > Alarms > Billing > Create Alarm > 
+    - Amount for charges to exceed
+    - Email Address
+- Billing Alerts/Alarms may come up in Exam
+
+### IAM Summary
+- IAM Consists of 
+    - Users
+    - Groups
+    - Roles
+    - Policy Documents
+    - IAM is Universal, not tied to regions
+    - The root account is simply the account created when you first setup your AWS account. It hass full admin access 
+    - New users have NO permissions when first created
+    - New users are assigned Access Key ID & Secrect Access Keys when first created
+    - These are not the same as a password, and you cannot use the Access key ID & Secret Access Key to login into the console.  You can use this to access AWS via the APIs and the CLI however
+    - You only get to view those credentials once.  If you lose them, you have to regenerate them.  So save them in a secure place.
+    - Always setup Multifactor Authentication on the root account
+    -  You can create and customize your own password policies
+
 
 
 # Questions 
@@ -390,7 +444,27 @@
 - You are a digital media agency and you need to convert your media files in to different formats to suit different devices. Which AWS service should you consider using to meet these needs?
 	- Elastic Transcoder
 
-
+### IAM
+- Which statement best describes IAM?
+    - IAM allows you to manage users, groups and roles and their corresponding level of access to the AWS Platform.
+- Which is NOT a feature of IAM?
+    - Allows you to setup biometric authentication, so that no passwords are required
+- Power User Access allows....
+    - Access to all AWS services except for management of groups and users within IAM. 
+- What level of access does the "root" account have?
+    - Administrator Access
+- You are a solutions architect working for a large engineering company who are moving their existing legacy hardware to AWS. You have configured their first AWS account and you have set up IAM. Your company will be primarily based out of West Germany, however they will have a small subsidiary operating out of South Korea and you will need an AWS environment configured there as well. Which of the following statements is true?
+    - You will need to configure Users and Policy Documents only once, as these are applied globally.
+- You have a client who is considering moving to AWS services and do not yet have an account. What is the first thing the company should do to set up an AWS Account?
+    - Set up an account using their company email address.
+- You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator and they will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are and you have provided the new user with their secret access key and their access key id. However when they go to log in to the AWS console, they cannot sign in. What could be the cause of this?
+    - You cannot log in to the AWS console using the Access Key ID and Secret Access Key, instead you must generate a password for the user and supply the user with this password, as well as the unique link to sign in to the AWS console.
+- What is an additional way to secure IAM for both the root login and new users alike?
+    - Implement multi-factor Authentication for all accounts.
+- By default when you create a new user in the IAM console, what level of access do they have?
+    - No access to all AWS services.
+- In what language are policy documents written in?
+    - JSON
 
 
 
