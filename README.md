@@ -9,3 +9,4 @@ Based on the ACloudGuru AWS CSA Course
 - [Services Overview](https://github.com/cmtzco/AWS-CSA-Notes/blob/master/AWSSolutionsNotes.md#aws---10000-feet-overview)
     - [IAM](https://github.com/cmtzco/AWS-CSA-Notes/blob/master/AWSSolutionsNotes.md#identity-access-management-iam)
 - [Quiz Questions](https://github.com/cmtzco/AWS-CSA-Notes/blob/master/AWSSolutionsNotes.md#questions)
+- [Quiz Questions with Answers](https://github.com/cmtzco/AWS-CSA-Notes/blob/master/AWSSolutionsNotes.md#questions-with-answers)
