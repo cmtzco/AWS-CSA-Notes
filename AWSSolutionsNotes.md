@@ -399,9 +399,73 @@
     - Always setup Multifactor Authentication on the root account
     -  You can create and customize your own password policies
 
-
-
 # Questions 
+### AWS - 10,000 Feet Overview
+- What is an AWS region?
+   
+- What does an AWS Region consist of? 
+   
+- Which statement best describes Availability Zones?
+    
+- An AWS VPC is a component of which AWS service?
+    
+- What is a VPC?
+   
+- Which AWS service is specifically designed for developers to upload their code to and then it will automatically handle the provisioning of those resources that are required to host that code?
+    
+- Which AWS service allows you to run code without having to worry about provisioning any underlying resources (such as virtual machines, databases etc)
+    
+- Amazon's highly scaleable DNS service is known as...
+    
+- Which AWS compute service is specifically designed to assist you in processing large data sets?
+    
+- What is the difference between Elastic Beanstalk & CloudFormation?
+    
+- Which AWS service is used a CDN to distribute content around the world?
+    
+- Where would be a durable place to store flat files on the AWS platform?
+    
+- Which AWS service would be the best choice for long term data archival?
+    
+- What AWS service consists of the following database services; SQL, MySQL, MariaDB, PostgreSQL, Aurora, Oracle?
+    
+- What AWS service would you use primarily for data warehousing?
+    
+- What AWS service is used for collating large amounts of data streamed from multiple sources? 
+    
+- You need to create new users to access the AWS console and to set password rotation policies for these new users. Which AWS service would best fit your requirements?
+    
+- You need to supply auditors with logs as to who provisions which resources on your AWS platform. Which service would best suit this?
+    
+- You need a configuration management service to allow your system administrators to configure and operate your web applications using Chef. Which AWS service would best suit your needs?
+    
+- You are a digital media agency and you need to convert your media files in to different formats to suit different devices. Which AWS service should you consider using to meet these needs?
+   
+
+### IAM
+- Which statement best describes IAM?
+    
+- Which is NOT a feature of IAM?
+    
+- Power User Access allows....
+     
+- What level of access does the "root" account have?
+    
+- You are a solutions architect working for a large engineering company who are moving their existing legacy hardware to AWS. You have configured their first AWS account and you have set up IAM. Your company will be primarily based out of West Germany, however they will have a small subsidiary operating out of South Korea and you will need an AWS environment configured there as well. Which of the following statements is true?
+    
+- You have a client who is considering moving to AWS services and do not yet have an account. What is the first thing the company should do to set up an AWS Account?
+    
+- You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator and they will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are and you have provided the new user with their secret access key and their access key id. However when they go to log in to the AWS console, they cannot sign in. What could be the cause of this?
+   
+- What is an additional way to secure IAM for both the root login and new users alike?
+    
+- By default when you create a new user in the IAM console, what level of access do they have?
+    
+- In what language are policy documents written in?
+    
+
+
+# Questions with answers
 ### AWS - 10,000 Feet Overview
 - What is an AWS region?
 	- A region is a geographical area that consists of different availability zones. Each region consists of 2 (or more) Availability Zones.
